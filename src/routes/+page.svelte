@@ -1,2 +1,40 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<script >
+	import Dashboard from '$lib/Dashboard.svelte';
+</script>
+
+<section>
+	1
+    <Dashboard />
+	2
+	<Dashboard />
+</section>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	.welcome {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 0 0 calc(100% * 495 / 2048) 0;
+	}
+
+	.welcome img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		display: block;
+	}
+</style>
